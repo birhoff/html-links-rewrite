@@ -1,0 +1,40 @@
+{
+  "name": "html-links-rewrite",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npm run lint",
+    "test": "npm run specs",
+    "specs": "mocha test/",
+    "cover": "nyc mocha test/",
+    "lint": "eslint .",
+    "release": "standard-version; git push --follow-tags origin master",
+    "github-release": "conventional-github-releaser -p angular -r 0"
+  },
+  "engines": {
+    "node": ">= 4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/birhoff/html-links-rewrite.git"
+  },
+  "keywords": [
+
+  ],
+  "author": "Konstantin Gladkikh <birhoff@gmail.com>",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/birhoff/html-links-rewrite/issues"
+  },
+  "homepage": "https://github.com/birhoff/html-links-rewrite#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.15.0",
+    "eslint-config-birhoff": "0.0.1",
+    "mocha": "^3.2.0",
+    "nyc": "^10.1.2"
+  },
+  "dependencies": {
+  }
+}
